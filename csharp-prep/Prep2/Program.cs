@@ -12,19 +12,63 @@ class Program
 
         if (grade >= 90)
         {
-            letter = "A";
+            if (grade >= 97)
+            {
+                letter = "A+";
+            }
+            if (grade <= 93)
+            {
+                letter = "A-";
+            }
+            if (grade > 93 && grade < 97)
+            {
+                letter = "A";
+            }
         }
         else if (grade >= 80)
         {
-            letter = "B";
+            if (grade >= 87)
+            {
+                letter = "B+";
+            }
+            if (grade <= 83)
+            {
+                letter = "B-";
+            }
+            if (grade > 83 && grade < 87)
+            {
+                letter = "B";
+            }
         }
         else if (grade >= 70)
         {
-            letter = "C";
+            if (grade >= 77)
+            {
+                letter = "C+";
+            }
+            if (grade <= 73)
+            {
+                letter = "C-";
+            }
+            if (grade > 73 && grade < 77)
+            {
+                letter = "C";
+            }
         }
         else if (grade >= 60)
         {
-            letter = "D";
+            if (grade >= 67)
+            {
+                letter = "D+";
+            }
+            if (grade <= 63)
+            {
+                letter = "D-";
+            }
+            if (grade > 63 && grade < 67)
+            {
+                letter = "D";
+            }
         }
         else
         {
