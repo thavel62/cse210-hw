@@ -13,6 +13,7 @@ class Program
         int magicNumber = randomGenerator.Next(1, 50);
     
         int guess = -1;
+        int guesses = 0;
 
         while (guess != magicNumber)
         {
@@ -22,14 +23,17 @@ class Program
             if (guess > magicNumber) 
             {
                 Console.WriteLine("Lower");
+                guesses ++;
             }
             else if (guess < magicNumber)
             {
                 Console.WriteLine("Higher");
+                guesses ++;
             }
             else
             {
                 Console.WriteLine("You guessed it! ");
+                Console.WriteLine($"You guessed {guesses} times. ");
             }  
         }
     }
