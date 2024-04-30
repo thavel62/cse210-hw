@@ -17,8 +17,8 @@ class Program
         job2._startYear = 2022;
         job2._endYear = 2023;
 
-        job1.Display(); // Option to display jobs separately from resume
-        job2.Display(); // Option to display jobs separately from resume
+        // job1.Display(); // Option to display jobs separately from resume
+        // job2.Display(); // Option to display jobs separately from resume
 
         Resume myResume = new Resume(); // Create a new Resume instance
         myResume._name = "Tyler Havel"; // Member Variable
