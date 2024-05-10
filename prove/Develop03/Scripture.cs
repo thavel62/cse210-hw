@@ -21,6 +21,7 @@ public class Scripture
     {
         if (numberToHide > _words.Count)
             throw new ArgumentException("Number of words to hide exceeds teh total number of words in the scripture.");
+            
         Random random = new Random();
         int wordsHidden = 0;
         while (wordsHidden < numberToHide)

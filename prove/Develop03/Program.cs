@@ -22,7 +22,7 @@ class Program
             if (input.ToLower() == "quit")
                 break;
 
-            scripture.HideRandomWords(1); // Hide one word at a time
+            scripture.HideRandomWords(3); // Hide three words at a time
             Console.WriteLine("Updated Scripture:");
             Console.WriteLine(scripture.GetDisplayText());
             Console.WriteLine();
