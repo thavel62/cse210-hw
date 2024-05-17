@@ -14,11 +14,16 @@ public class MindfulnessActivity
     }
     public virtual void EndActivity()
     {
-        Console.WriteLine($"Activity completed in {durationInSeconds} seconds."); // Ending message
+        Console.WriteLine("Activity completed"); // Ending message
     }
     protected void PauseWithAnimation(int seconds)
     {
-        Console.WriteLine($"Pausing for {seconds} seconds");
-        System.Threading.Thread.Sleep(seconds*1000);
+        for (int i = 0; i < seconds * 10; i++)
+        {
+            string[] animation = { "|", "/", "-", "\\" };
+            Console.Write("\r" + animation[i % 4]);
+            System.Threading.Thread.Sleep(100);
+        }
+        Console.WriteLine("\r   \r");
     }
 }

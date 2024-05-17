@@ -45,6 +45,7 @@ class Program
     }
     static void RunBreathingActivity()
     {
+        // set up timer for breathing activity
         Console.WriteLine("Enter duration of breathing activity (in seconds): ");
         int duration = int.Parse(Console.ReadLine());
 
@@ -56,12 +57,10 @@ class Program
 
     static void RunReflectionActivity()
     {
-        Console.WriteLine("Enter duration of breathing activity (in seconds): ");
-        int duration = int.Parse(Console.ReadLine());
-
-        ReflectionActivity reflectionActivity = new ReflectionActivity(duration);
+        // no prompt for time
+        ReflectionActivity reflectionActivity = new ReflectionActivity(); // no timer necessary
         reflectionActivity.StartActivity();
-        reflectionActivity.ReflectOnExperience();
+        reflectionActivity.PerformReflection();
         reflectionActivity.EndActivity();
     }
 
